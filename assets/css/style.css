@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     background-color: #141259;
     color: white;
@@ -11,9 +12,7 @@ html {
     font-weight: 400;
 }
 
-h1, h2 {
-    display: none;
-}
+body{ min-height: 100vh;}
 
 span {
     margin: 0 1ex;
@@ -42,7 +41,7 @@ li {
     justify-content: space-between;
     padding: 10px;
     border-bottom: #F29F05 2px solid;
-    margin: 0 30px 20px
+    margin: 0 20px  0 0;
 }
 
 .indice__nombre {
@@ -54,7 +53,7 @@ li {
 
 .indice__nombre__mountop {
     display:flex;
-    margin: auto;
+justify-content: end;
     width: 180px;
 }
 
@@ -77,6 +76,7 @@ li {
 
 .index {display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .index .main--centrar {
@@ -191,10 +191,6 @@ width: 60%;
     display:inline-block;
 }
 
-.contenedor__footer {
-    margin: 25px
-}
-
 .footer__p--link {
     color: #ffffff;
 }
@@ -203,10 +199,9 @@ footer {display: flex;
     width: 100%;
     justify-content: space-around;
     margin: 30px 40px 10;
-    border-top: #F27405 3px solid;
 }
 
-.footer {
+.red {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -227,6 +222,7 @@ justify-content: center;
     display:flex;
     justify-content: center;
 }
+
 
 .navegador__li {
     background-color: #F29F05;
@@ -290,6 +286,8 @@ justify-content: center;
 .nosotros {
     display: flex;
     flex-direction: column;
+    padding: 30px 0;
+    border-bottom: #F29F05 5px solid;
 }
 
 .nosotros__titulo {
@@ -301,7 +299,8 @@ justify-content: center;
 .nosotros__titulo__img {
 justify-content:  space-evenly;
 margin: auto;
-width: 40%;
+width: 50%;
+padding: 15px 0;
 border-bottom: 2px #F27405 solid}
 
 
@@ -355,8 +354,7 @@ flex-direction: column;}
 .nosotros__img .main__menu .menu__img {width: 70%;}
 
 .iframe {display: flex;
-    justify-content: center;
-border-bottom: #F29F05 solid 3px;}
+    justify-content: center;}
 
 .iiframe {display: flex; 
     justify-content: center; 
@@ -365,19 +363,11 @@ border-bottom: #F29F05 solid 3px;}
     margin: 5%;}
 
 
-
-
-
-
-
-
-
-
-
 /* comienzo contacto */
 form {display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 30px 0;
 border-radius: 900;}
 
 .nosotros__descripcion__p_c {display: flex;
@@ -415,18 +405,19 @@ margin: auto;}
 
 .btn:hover {color: #C9E9F6;background-color: #141259;box-shadow: #F29F05;}
 
-.contacto__img {width: 50px;
+.contacto__img {width: 30px;
 margin: 20px;}
 
 
 .gridcontainer{ display: grid;
+width: 100%;
 grid-template-columns: auto;
 grid-template-rows: auto 1fr  auto;
 grid-template-areas:    "nav"
                         "main"
                         "footer"}
 header { grid-area: nav; margin-bottom: 15px;}
-footer {grid-area: footer; margin: 15px 5px; text-align: center;}
+footer {grid-area: footer; margin: 15px 0; text-align: center; border-top: #F29F05 5px solid; padding: 15px;margin-top: auto;}
 main {grid-area: main;}
 
 @media (max-width: 576px) {
@@ -484,5 +475,3 @@ main {grid-area: main;}
 .foto { width: 80%;}
 
 /* inicion contacto */
-
-} 
