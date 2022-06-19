@@ -6,7 +6,7 @@
 
 
 html {
-    background-color: #141259;
+    background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -40,7 +40,7 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: #F29F05 2px solid;
+    border-bottom: #e3e4e5 2px solid;
     margin: 0 20px  0 0;
 }
 
@@ -225,7 +225,7 @@ justify-content: center;
 
 
 .navegador__li {
-    background-color: #F29F05;
+    background-color: #C9E9F6;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@ justify-content: center;
 
 
 .navegador__li:hover {
-    background-color: #F27405; 
+    background-color: orange; 
     transform: translate(0px, 5px)
 }
 .navegador__li, .navegador__a{ 
@@ -287,7 +287,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     padding: 30px 0;
-    border-bottom: #F29F05 5px solid;
+    border-bottom: #e3e4e5 5px solid;
 }
 
 .nosotros__titulo {
@@ -299,9 +299,9 @@ justify-content: center;
 .nosotros__titulo__img {
 justify-content:  space-evenly;
 margin: auto;
-width: 50%;
-padding: 15px 0;
-border-bottom: 2px #F27405 solid}
+width: 30%;
+padding: 0  0 15px 0;
+border-bottom: 2px #e3e4e5 solid}
 
 
 .nosotros__img{display: flex;}
@@ -354,7 +354,8 @@ flex-direction: column;}
 .nosotros__img .main__menu .menu__img {width: 70%;}
 
 .iframe {display: flex;
-    justify-content: center;}
+    justify-content: center;
+margin: auto;}
 
 .iiframe {display: flex; 
     justify-content: center; 
@@ -381,7 +382,7 @@ fieldset {display: flex;
     width: 60%;
     margin: auto;
     padding: 10px;
-    background-color: #F27405;
+    background-color: #e3e4e5;
 border-radius: 20px;}
     
 .form__cosa {margin: 5px;
@@ -398,12 +399,12 @@ font-weight: 500s;}
 .form__cosa__legend {margin: auto;
 font-weight: 700;}
 
-.btn {background-color: #F29F05;
+.btn {background-color: #e3e4e5;
 padding: 5px;
 border-radius: 10px;
 margin: auto;}
 
-.btn:hover {color: #C9E9F6;background-color: #141259;box-shadow: #F29F05;}
+.btn:hover {color: #C9E9F6;background-color: #141259;box-shadow: #e3e4e5;}
 
 .contacto__img {width: 30px;
 margin: 20px;}
@@ -417,7 +418,7 @@ grid-template-areas:    "nav"
                         "main"
                         "footer"}
 header { grid-area: nav; margin-bottom: 15px;}
-footer {grid-area: footer; margin: 15px 0; text-align: center; border-top: #F29F05 5px solid; padding: 15px;margin-top: auto;}
+footer {grid-area: footer; margin: 15px 0; text-align: center; border-top: #e3e4e5 5px solid; padding: 15px;margin-top: auto;}
 main {grid-area: main;}
 
 @media (max-width: 576px) {
